@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:spid="https://spid.gov.it/saml-extensions" entityID="https://spid.grandcombin.vda.it">
+	<ds:Signature>
+	<ds:SignedInfo>
+	<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+	<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+	<ds:Reference URI="">
+	<ds:Transforms>
+	<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+	<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+	</ds:Transforms>
+	<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+	<ds:DigestValue>On6mT0ayJ3Fljtx68Z2KNyFljRoxcRNUSfQBq2UbNww=</ds:DigestValue>
+	</ds:Reference>
+	</ds:SignedInfo>
+	<ds:SignatureValue>
+	kdZmHlC3xnkOF3Ra4eyffHO5CCvdEA/y2DchNFrH+MLM19uAtUyT+DVmpbbxhJp6jrV603tiExGQ
+	uHKpi7ESUaeLCmx1BQAlE/Aa01FQvv4DQ2iiFLSYvi885FahZRlxq3xbwqRuS4h1sf40HS6Ijmkw
+	g5VZ3a77i9YMGYWuLZZOlyyu5UOg5u9JVgMOwE76voaUmLWVqnGMMeAlw3qBT8FIm+MoW2FykoRW
+	G9QmGy5oVcyosZRfMB7omBoOEQ9SZsiDhIiDb/1wm0D/3KJk3pLoUjrKhqF6j2uEs/JEDwd0ofod
+	dNNVRy4yLaXnyXAutZpYPi78zKKKcuUR8yIYMr/XaJHadAeJlYbSkVR+HYvIZ+PEdwCb4g0Ok+RM
+	4vT8FRbQZ2tgmMpSG62PjORTbYB0+AbtPGH5nQRb+lFQTtJYyk/uu55ItFFX/Q1LBdfOWQMAsJ1l
+	CbTD+kj3I7e3N35gcDkV+TpWwCPexDE9zZZ5cU4fL414jNeEnbnkOruUz4AwbnWmgTfgxb8H4nyz
+	4/Pm+RKh/BHEVjS43B7SsgyvbT+aikHRl5KzXOQB0silV7tVwINf0Mstslcfiuwk73Mt6j4jCqoy
+	HB2nLaAVZxZ2nCW+hFGPOAgA1AQ8dUnnjZEa5n24IKHh1nAOxiGVXTGlPLdvx7rOVgFqMer+qDU=
+	</ds:SignatureValue>
+	<ds:KeyInfo>
+	<ds:KeyValue>
+	<ds:RSAKeyValue>
+	<ds:Modulus>
+	yTLYQJh+IeI4Elyx5F2kCansZh70Sl8h8t4nkKbt8ESwePs7U+BXjXfVnnMV/e1lN7e9JHgXuM6+
+	fwsj3CBZEtdTI8jSmLBN21bom5sbk/7QtkJlfcvmLVBjpwPzen0QEB8Cw7IseJ0gI2Mus3FS528x
+	YzjqZ5ApTxsFSxL0H2JKRjBWg6JAxqmMvJls5jSUOfacFATlgBr8IhB6b9tuAxHFeiYZ62jFRKSn
+	VoMA0GpS2DGPqqsh32J4oHDAOIfKkHotySY2jDV/5dBXygpElcCYhCfVBAbJ9JnZ6PFOHD5vrDlQ
+	3eYmC4IlA66/vr6KhICYVNWNrFbMVrsibPtxwRdtQgLw6WKcOOGp1avKE2lTU1LXD7tTkVTEdedK
+	Xz+y2Fw+GxDNPUgWK6wwNZorgcfKDlDQVPZ+28t7cz/O1SncJ3k0TcyOTpwqg02j5QoWYG+LDgG5
+	kSuZfyz0SRpyrMOAGh4UN0O6TPeKLWqRBYkya63/Y1/tpar8QX5zfZUnKy1Gnn+xOSq4hAXR9CRc
+	4Px3xdYqO5v4+OAzDZTN7HZmdFyNOZjy3phobMufFLzH6Szj6jdMBDWrhL4pWk4zBWcpEtlGdD5X
+	i/zJwTSLeXkb/pYFLa860OW15GIPzb8q2J9zwsoOhd8NcZ22KUB/140/5eGe3ozhUKKWMUnaNKk=
+	</ds:Modulus>
+	<ds:Exponent>AQAB</ds:Exponent>
+	</ds:RSAKeyValue>
+	</ds:KeyValue>
+	<ds:X509Data>
+	<ds:X509Certificate>
+	MIIGNDCCBBygAwIBAgIJANU+oUeUDVPCMA0GCSqGSIb3DQEBCwUAMIHMMQ8wDQYDVQQIDAZJdGFs
+	aWExMjAwBgNVBAoMKVVuaW9uZSBEZWkgQ29tdW5pIFZhbGRvc3RhbmkgR3JhbmQgQ29tYmluMSgw
+	JgYDVQQDDB9odHRwczovL3NwaWQuZ3JhbmRjb21iaW4udmRhLml0MSgwJgYDVQRTDB9odHRwczov
+	L3NwaWQuZ3JhbmRjb21iaW4udmRhLml0MRMwEQYDVQRhDApQQTpJVC11Y2djMQswCQYDVQQGEwJJ
+	VDEPMA0GA1UEBwwGR2lnbm9kMB4XDTIxMDQwNjEwMTUwMFoXDTIzMDQwNjEwMTUwMFowgcwxDzAN
+	BgNVBAgMBkl0YWxpYTEyMDAGA1UECgwpVW5pb25lIERlaSBDb211bmkgVmFsZG9zdGFuaSBHcmFu
+	ZCBDb21iaW4xKDAmBgNVBAMMH2h0dHBzOi8vc3BpZC5ncmFuZGNvbWJpbi52ZGEuaXQxKDAmBgNV
+	BFMMH2h0dHBzOi8vc3BpZC5ncmFuZGNvbWJpbi52ZGEuaXQxEzARBgNVBGEMClBBOklULXVjZ2Mx
+	CzAJBgNVBAYTAklUMQ8wDQYDVQQHDAZHaWdub2QwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK
+	AoICAQDJMthAmH4h4jgSXLHkXaQJqexmHvRKXyHy3ieQpu3wRLB4+ztT4FeNd9WecxX97WU3t70k
+	eBe4zr5/CyPcIFkS11MjyNKYsE3bVuibmxuT/tC2QmV9y+YtUGOnA/N6fRAQHwLDsix4nSAjYy6z
+	cVLnbzFjOOpnkClPGwVLEvQfYkpGMFaDokDGqYy8mWzmNJQ59pwUBOWAGvwiEHpv224DEcV6Jhnr
+	aMVEpKdWgwDQalLYMY+qqyHfYnigcMA4h8qQei3JJjaMNX/l0FfKCkSVwJiEJ9UEBsn0mdno8U4c
+	Pm+sOVDd5iYLgiUDrr++voqEgJhU1Y2sVsxWuyJs+3HBF21CAvDpYpw44anVq8oTaVNTUtcPu1OR
+	VMR150pfP7LYXD4bEM09SBYrrDA1miuBx8oOUNBU9n7by3tzP87VKdwneTRNzI5OnCqDTaPlChZg
+	b4sOAbmRK5l/LPRJGnKsw4AaHhQ3Q7pM94otapEFiTJrrf9jX+2lqvxBfnN9lScrLUaef7E5KriE
+	BdH0JFzg/HfF1io7m/j44DMNlM3sdmZ0XI05mPLemGhsy58UvMfpLOPqN0wENauEvilaTjMFZykS
+	2UZ0PleL/MnBNIt5eRv+lgUtrzrQ5bXkYg/NvyrYn3PCyg6F3w1xnbYpQH/XjT/l4Z7ejOFQopYx
+	Sdo0qQIDAQABoxcwFTATBgNVHSAEDDAKMAgGBitMEAQCATANBgkqhkiG9w0BAQsFAAOCAgEAGep6
+	jXMbNxXzgMZFw95l4nYpghCm+YG4oyxHVwgpDrBb2mxQrIRjk5Bm3+D33D9d/OCIni3MvCpdnE+M
+	kY8tupkVItFd68sZozhWXmiXI291gQSLKpglsikJjk76cXgitL9A0WPgUJNk1n1M6fR2i6KOPaSa
+	N9okWc82jMWnMT4f8ZW36jEybl11dLw7oAVx2gKhwh0lTRkoqxCCtOHApO0MLny1ylKhhO1Ne3w5
+	wMy1QhF7IRHZ/oo9jCCaObBllkKpIWD5b2P/Qa0s+PdqQdlV40e8CsqMKF0Cx5FbxlQPivVvRyxX
+	zjxCclGqWLpDL2i/PcBDFnc/+HvEJkUfmh1eV8LODkjziMoTXnMNClX3J4XH1WUYkQrtqJdDXzXG
+	W9eBGotKc1x74z/HETZbZVjaipKXXei9OT0uZpqvqfk89dtbe4dGsgHat6eRA62D35Pg3q4gbscH
+	ml0uFlHZOTW9LC3qxdDXlX4K71YQhusjNPvEUuH5poQ4Nu+/eBrhGMLS9ifwZr/0qJo68S48YYpK
+	KJIRlaqQehf21nsEBPJnKhRkxOwls90kGTf33+FcosBY1p5glojIzr1ADhqMWBX/vb1aybLPQduX
+	P/UN/0DIdFdRwbdR3+x1ziC+0Op7rdUOFF5AuuFZXv7jiuOtpwmqSjj4OBytJ2coyKUzD5M=
+	</ds:X509Certificate>
+	</ds:X509Data>
+	</ds:KeyInfo>
+	</ds:Signature>
+	<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">     
+		<md:KeyDescriptor use="signing">       
+			<ds:KeyInfo>         
+				<ds:X509Data>           
+					<ds:X509Certificate>
+					MIIGNDCCBBygAwIBAgIJANU+oUeUDVPCMA0GCSqGSIb3DQEBCwUAMIHMMQ8wDQYDVQQIDAZJdGFs
+					aWExMjAwBgNVBAoMKVVuaW9uZSBEZWkgQ29tdW5pIFZhbGRvc3RhbmkgR3JhbmQgQ29tYmluMSgw
+					JgYDVQQDDB9odHRwczovL3NwaWQuZ3JhbmRjb21iaW4udmRhLml0MSgwJgYDVQRTDB9odHRwczov
+					L3NwaWQuZ3JhbmRjb21iaW4udmRhLml0MRMwEQYDVQRhDApQQTpJVC11Y2djMQswCQYDVQQGEwJJ
+					VDEPMA0GA1UEBwwGR2lnbm9kMB4XDTIxMDQwNjEwMTUwMFoXDTIzMDQwNjEwMTUwMFowgcwxDzAN
+					BgNVBAgMBkl0YWxpYTEyMDAGA1UECgwpVW5pb25lIERlaSBDb211bmkgVmFsZG9zdGFuaSBHcmFu
+					ZCBDb21iaW4xKDAmBgNVBAMMH2h0dHBzOi8vc3BpZC5ncmFuZGNvbWJpbi52ZGEuaXQxKDAmBgNV
+					BFMMH2h0dHBzOi8vc3BpZC5ncmFuZGNvbWJpbi52ZGEuaXQxEzARBgNVBGEMClBBOklULXVjZ2Mx
+					CzAJBgNVBAYTAklUMQ8wDQYDVQQHDAZHaWdub2QwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK
+					AoICAQDJMthAmH4h4jgSXLHkXaQJqexmHvRKXyHy3ieQpu3wRLB4+ztT4FeNd9WecxX97WU3t70k
+					eBe4zr5/CyPcIFkS11MjyNKYsE3bVuibmxuT/tC2QmV9y+YtUGOnA/N6fRAQHwLDsix4nSAjYy6z
+					cVLnbzFjOOpnkClPGwVLEvQfYkpGMFaDokDGqYy8mWzmNJQ59pwUBOWAGvwiEHpv224DEcV6Jhnr
+					aMVEpKdWgwDQalLYMY+qqyHfYnigcMA4h8qQei3JJjaMNX/l0FfKCkSVwJiEJ9UEBsn0mdno8U4c
+					Pm+sOVDd5iYLgiUDrr++voqEgJhU1Y2sVsxWuyJs+3HBF21CAvDpYpw44anVq8oTaVNTUtcPu1OR
+					VMR150pfP7LYXD4bEM09SBYrrDA1miuBx8oOUNBU9n7by3tzP87VKdwneTRNzI5OnCqDTaPlChZg
+					b4sOAbmRK5l/LPRJGnKsw4AaHhQ3Q7pM94otapEFiTJrrf9jX+2lqvxBfnN9lScrLUaef7E5KriE
+					BdH0JFzg/HfF1io7m/j44DMNlM3sdmZ0XI05mPLemGhsy58UvMfpLOPqN0wENauEvilaTjMFZykS
+					2UZ0PleL/MnBNIt5eRv+lgUtrzrQ5bXkYg/NvyrYn3PCyg6F3w1xnbYpQH/XjT/l4Z7ejOFQopYx
+					Sdo0qQIDAQABoxcwFTATBgNVHSAEDDAKMAgGBitMEAQCATANBgkqhkiG9w0BAQsFAAOCAgEAGep6
+					jXMbNxXzgMZFw95l4nYpghCm+YG4oyxHVwgpDrBb2mxQrIRjk5Bm3+D33D9d/OCIni3MvCpdnE+M
+					kY8tupkVItFd68sZozhWXmiXI291gQSLKpglsikJjk76cXgitL9A0WPgUJNk1n1M6fR2i6KOPaSa
+					N9okWc82jMWnMT4f8ZW36jEybl11dLw7oAVx2gKhwh0lTRkoqxCCtOHApO0MLny1ylKhhO1Ne3w5
+					wMy1QhF7IRHZ/oo9jCCaObBllkKpIWD5b2P/Qa0s+PdqQdlV40e8CsqMKF0Cx5FbxlQPivVvRyxX
+					zjxCclGqWLpDL2i/PcBDFnc/+HvEJkUfmh1eV8LODkjziMoTXnMNClX3J4XH1WUYkQrtqJdDXzXG
+					W9eBGotKc1x74z/HETZbZVjaipKXXei9OT0uZpqvqfk89dtbe4dGsgHat6eRA62D35Pg3q4gbscH
+					ml0uFlHZOTW9LC3qxdDXlX4K71YQhusjNPvEUuH5poQ4Nu+/eBrhGMLS9ifwZr/0qJo68S48YYpK
+					KJIRlaqQehf21nsEBPJnKhRkxOwls90kGTf33+FcosBY1p5glojIzr1ADhqMWBX/vb1aybLPQduX
+					P/UN/0DIdFdRwbdR3+x1ziC+0Op7rdUOFF5AuuFZXv7jiuOtpwmqSjj4OBytJ2coyKUzD5M=
+					</ds:X509Certificate>         
+				</ds:X509Data>       
+			</ds:KeyInfo>     
+		</md:KeyDescriptor>     
+
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:59706/SPID/POST"/>   
+
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>     
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:59706/SPID/POST" index="0" isDefault="true"/> 
+
+		<md:AttributeConsumingService index="0">   
+		<md:ServiceName xml:lang="it">SAC SPID</md:ServiceName>
+		<md:RequestedAttribute Name="spidCode" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+		<md:RequestedAttribute Name="fiscalNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+		<md:RequestedAttribute Name="ivaCode" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+		<md:RequestedAttribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
+		</md:AttributeConsumingService>  
+	</md:SPSSODescriptor>   
+
+	<md:Organization>     
+	<md:OrganizationName xml:lang="it">Unione Dei Comuni Valdostani Grand Combin</md:OrganizationName>     
+	<md:OrganizationDisplayName xml:lang="it">Grand Combin</md:OrganizationDisplayName>     
+	<md:OrganizationURL xml:lang="it">https://spid.grandcombin.vda.it</md:OrganizationURL>  
+	</md:Organization> 
+	<md:ContactPerson contactType="other">
+		 <md:Extensions>
+			 <spid:IPACode>ucgc</spid:IPACode>
+			 <spid:FiscalCode>80003190073</spid:FiscalCode>
+			 <spid:Public/>
+		 </md:Extensions>
+		 <md:Company>Unione Dei Comuni Valdostani Grand Combin</md:Company>
+	<md:EmailAddress>protocollo@pec.cm-grandcombin.vda.it</md:EmailAddress>
+	</md:ContactPerson>
+</md:EntityDescriptor>

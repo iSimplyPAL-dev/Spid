@@ -1,0 +1,106 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://spid.grandcombin.vda.it">
+ 
+<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">     
+<md:KeyDescriptor use="signing">       
+<ds:KeyInfo>         
+<ds:X509Data>           
+<ds:X509Certificate>
+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
+</ds:X509Certificate>         
+</ds:X509Data>       
+</ds:KeyInfo>     
+</md:KeyDescriptor>     
+
+<md:KeyDescriptor use="encryption">       
+<ds:KeyInfo>         
+<ds:X509Data>           
+<ds:X509Certificate>
+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
+</ds:X509Certificate>         
+</ds:X509Data>       
+</ds:KeyInfo>     
+</md:KeyDescriptor>  
+
+
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sportellotributi.grandcombin.vda.it/SPID/SLO/Redirect"/>     
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sportellotributi.grandcombin.vda.it/SPID/SLO/POST"/>     
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>     
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sportellotributi.grandcombin.vda.it/SPID/POST" index="1" /> 
+<md:AttributeConsumingService index="1">   
+<md:ServiceName xml:lang="it">set 0</md:ServiceName>   
+<md:RequestedAttribute Name="spidCode"/>   
+<md:RequestedAttribute Name="fiscalNumber"/>   
+<md:RequestedAttribute Name="ivaCode"/>   
+<md:RequestedAttribute Name="email"/> 
+</md:AttributeConsumingService>   
+</md:SPSSODescriptor>   
+<md:Organization>     
+<md:OrganizationName xml:lang="it">iSimply srl</md:OrganizationName>     
+<md:OrganizationDisplayName xml:lang="it">iSimply srl</md:OrganizationDisplayName>     
+<md:OrganizationURL xml:lang="it">https://spid.grandcombin.vda.it/</md:OrganizationURL>   
+</md:Organization> 
+</md:EntityDescriptor>

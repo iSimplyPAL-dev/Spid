@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SPID.net</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body style="background-color: #007db3;">
+    <div id="Pagina">
+        @*<div class="navbar navbar-inverse navbar-fixed-top">*@
+        @*<div class="container">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              Html.ActionLink("SPID.Net", "Index", "Home", new { area = "" }, new {class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Informazioni", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contatti", "Contact", "Home")</li>
+                </ul>
+        </div>
+        container
+        </div>*@
+     @*</div>*@
+
+        @RenderBody()
+
+    </div>
+
+    <hr />
+    <div id="footer">
+        <table align="center">
+            <tr>
+                <td width="30%" valign="middle"> Andreani Triburi S.r.l.        </td>
+
+                <td width="40%" valign="middle">
+                    Indirizzo: Via Cluentina, 33 62100 Macerata (MC)<br />
+                    Telefono: +39 0733 187 52 10<br />
+                    Email: info@gruppoandreani.it<br />
+                </td>
+                <td width="30%" valign="middle">
+                    P.IVA: 01412920439<br />
+                    Camera di Commercio di Macerata<br />
+                    Reg. Impr. Nr. 01412920439 e Nr. Rea 150208<br />
+                    Capitale Sociale € 6.000.000,00 i.v.<br />
+                </td>
+            </tr>
+            
+        </table>
+        
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

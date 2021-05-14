@@ -1,0 +1,98 @@
+﻿@*@{
+        ViewBag.Title = "Home Page";
+    }
+*@
+
+
+        <div class="LogoAndreani">
+            <img src="~/Content/images/Andreani.png" width="100px" />
+            @ViewBag.Message
+
+            @if (ViewBag.Name != null && ViewBag.Surname != null)
+            {
+                <h3><b>Utente autenticato: @ViewBag.Name @ViewBag.Surname</b></h3>
+            }
+        </div>
+
+
+
+        <div id="SPID">
+            SPID è il sistema di accesso che consente di utilizzare, con un'identità digitale unica,
+            i servizi online della Pubblica Amministrazione e dei privati accreditati.
+            Se sei già in possesso di un'identità digitale, accedi con le credenziali del tuo gestore.
+            Se non hai ancora un'identità digitale, richiedila ad uno dei gestori.
+            <br />
+            <br />
+
+            <a class="italia-it-button italia-it-button-size-m button-spid" aria-expanded="false" id="ddlSPID"
+               aria-haspopup="true" style="font-size: 15px;" href="#"
+               spid-idp-button="#spid-idp-button-medium-post">
+                <span class="italia-it-button-icon">
+                    <img title="" alt="" src="~/Content/images/spid-ico-circle-bb.png">
+                </span>
+                <span class="italia-it-button-text">Entra con SPID</span>
+            </a>
+            <div class="spid-idp-button spid-idp-button-tip spid-idp-button-relative hideDDL" id="spid-idp-button-medium-post" style="text-align: left;">
+                <ul class="spid-idp-button-menu" id="spid-idp-list-medium-root-post" aria-labelledby="spid-idp">
+                        @foreach (var item in ViewBag.IDPList)
+                        {
+                            <li>
+
+                                <a href='@Url.Action("SpidRequest", "Home", new { IdPName = @item.IDPName })'>
+                                    <img class="idp-button-idp-logo" title=@item.Title alt="SPID ID" src='@Url.Content(@item.URL_Image)' width="150px" />
+                                </a>
+
+
+                            </li>
+                        }
+                    </ul>
+            </div>
+            <br />
+            <br />
+            <div><a class="loginpin_link" href="http://www.spid.gov.it/" target="_blank">Maggiori informazioni su SPID</a></div>
+            <div><a class="loginpin_link" href="http://www.spid.gov.it/#registrati" target="_blank">Non hai SPID?</a></div>
+            <br />
+            <img src="~/Content/images/spid_footer.png" />
+
+
+
+        </div>
+
+
+
+
+            @if (ViewBag.Logged ?? false)
+            {
+                <div class="col-md-3">
+                    <div class="LogoutBoxSPID">
+                        <a class="italia-it-button italia-it-button-size-m button-spid" aria-expanded="false" id="ddlSPID"
+                           aria-haspopup="true" style="font-size: 15px;" href='@Url.Action("LogoutRequest", "Home")'
+                           spid-idp-button="#spid-idp-button-medium-post">
+                            <span class="italia-it-button-icon">
+                                <img title="" alt="" src="~/Content/images/logout-circle.png">
+                            </span>
+                            <span class="italia-it-button-text">Logout</span>
+                        </a>
+                    </div>
+                </div>
+            }
+
+
+
+
+            @section Scripts{
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $("#ddlSPID").click(function () {
+                            if ($("#spid-idp-button-medium-post").hasClass('hideDDL')) {
+                                $('#spid-idp-button-medium-post').removeClass('hideDDL');
+                                $('#spid-idp-button-medium-post').addClass('showDDL');
+                            }
+                            else {
+                                $('#spid-idp-button-medium-post').addClass('hideDDL');
+                                $('#spid-idp-button-medium-post').removeClass('showDDL');
+                            }
+                        });
+                    });
+                </script>
+            }
