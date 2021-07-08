@@ -53,40 +53,40 @@ namespace Italia.Spid.AspNet.WebApp.Controllers
                     new IDP_Name(){ Position=3, IDPName="https://identity.infocert.it", URL_Image = "~/Content/images/spid-idp-infocertid.png" , Title="Infocert" },
                     new IDP_Name(){ Position=4, IDPName="https://id.lepida.it/idm/app/", URL_Image = "~/Content/images/spid-idp-lepida.png", Title="Lepida" },
                     new IDP_Name(){ Position=5, IDPName="https://idp.namirialtsp.com/idp", URL_Image = "~/Content/images/spid-idp-namirial.png", Title="Namirial" },
-                    new IDP_Name(){ Position=6, IDPName="https://spidposte.test.poste.it", URL_Image = "~/Content/images/spid-idp-posteid.png", Title="Poste Italiane" },
+                    new IDP_Name(){ Position=6, IDPName="https://posteid.poste.it/", URL_Image = "~/Content/images/spid-idp-posteid.png", Title="Poste Italiane" },
                     new IDP_Name(){ Position=7, IDPName="https://spid.register.it", URL_Image = "~/Content/images/spid-idp-register.png", Title="Register"  },
                     new IDP_Name(){ Position=8, IDPName="https://login.id.tim.it/affwebservices/public/saml2sso", URL_Image = "~/Content/images/spid-idp-titrust.png", Title="TI_Trust_Technologies"  },
                     new IDP_Name(){ Position=9, IDPName="https://identity.sieltecloud.it", URL_Image = "~/Content/images/spid-idp-sielteid.png", Title="Sielte"  },
-                    new IDP_Name(){ Position=10, IDPName="https://validator.spid.gov.it", URL_Image = "~/Content/images/spid-agid.png", Title="SpID Validator"  },
-                    new IDP_Name(){ Position=11, IDPName="https://idptest.spid.gov.it", URL_Image = "~/Content/images/spid-agid.png", Title="TEST"  },
+                    //new IDP_Name(){ Position=10, IDPName="https://validator.spid.gov.it", URL_Image = "~/Content/images/spid-agid.png", Title="SpID Validator"  },
+                    //new IDP_Name(){ Position=11, IDPName="https://idptest.spid.gov.it", URL_Image = "~/Content/images/spid-agid.png", Title="TEST"  },
                };
 
             //metodo di ordinamento
 
             List<IDP_Name> IDPListRandom = new List<IDP_Name>()
             {
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
-    new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                //new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
+                //new IDP_Name(){ Position=0, IDPName="", URL_Image = "" , Title="Vuoto" },
             };
 
             int numeroCasuale=0;
 
             int indiceMax = 9;
             int min = 0;
-            int max = 11;
+            int max = 9;
 
 
             Random random = new Random();
-            int[] numeri_usati = new int[11];
+            int[] numeri_usati = new int[9];
 
             //il find con lo 0 da errore
             
@@ -123,7 +123,7 @@ namespace Italia.Spid.AspNet.WebApp.Controllers
 
             List<int> numeri_mancanti = new List<int>();
             //popolato da 0 a 7 i primi 8 valori
-            for (int i =0; i < 11; i++)
+            for (int i =0; i < 9; i++)
             {
                 if (i==0)
                 {

@@ -102,8 +102,8 @@ namespace Italia.Spid.AspNet.WebApp
                     OrganizationName = "Poste Italiane SpA IDP DI TEST",
                     OrganizationDisplayName = "Poste Italiane SpA IDP DI TEST",
                     OrganizationUrl = ConstWrapper.IDP_PosteItaliane,
-                    SingleSignOnServiceUrl ="https://spidposte.test.poste.it/jod-fs/ssoservicepost",
-                    SingleLogoutServiceUrl = "https://spidposte.test.poste.it/jod-fs/sloservicepost",
+                    SingleSignOnServiceUrl ="https://posteid.poste.it//jod-fs/ssoservicepost",
+                    SingleLogoutServiceUrl = "https://posteid.poste.it//jod-fs/sloservicepost",
                     SubjectNameIdRemoveText = "SPID-", // We need to remove it from Subject Name ID otherwise subsequent logout will fail
                     DateTimeFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fff'Z'",
                     NowDelta = 0
